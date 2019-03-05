@@ -19,7 +19,7 @@ const int CheckIntervalSeconds = 10;
 ESP8266WebServer webServer(80);
 SI7021 sensor;
 
-int nextCheck = 0;
+unsigned long nextCheck = 0;
 bool isRelayOn = false;
 
 void relayOn()
